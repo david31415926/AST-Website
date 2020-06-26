@@ -7,7 +7,10 @@
 
 
 body {
-	margin: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top:0;
+	margin-bottom: 3rem;
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
 }
@@ -17,6 +20,10 @@ img {
 	height: auto;
 }
 
+
+.body-section {
+	min-height: 100vh;
+}
 
 .container {
 	width: 95%;
@@ -86,7 +93,7 @@ img {
 header {
 	width: 100%;
 	position: fixed;
-	top: 0:
+	top: 0;
 	left: 0;
 	right: 0;
 	background-color: black;	
@@ -247,7 +254,7 @@ nav a:focus {
 		padding-right: 3vw;
 	}
 	.home-about {
-		padding-top: 5vh;
+		padding-top: 0;
 		padding-left: 10vw;
 		padding-right: 10vw;
 }
@@ -399,15 +406,24 @@ nav a:focus {
 	float: left;
 	width: 100%;
 	text-align: center;
+	list-style: none;
 }
 
 /*gets rid of default margin that is saved for the bullets and sets padding/margins*/
-.menu-columns ul{
+.menu-columns ul {
 	margin: 1vh;
 	padding: 1vh;
 	text-align: left;
 	list-style-type: none;
 	display: inline-block;
+	list-style-image: none;
+	list-style: none;
+}
+
+.menu-columns li {
+	list-style: none;
+	list-style-image: none;
+	text-align: left;
 }
 
 
@@ -422,14 +438,20 @@ nav a:focus {
 	text-align: left;
 	list-style-type: none;
 	display: inline-block;
+	font-size: 1.25em;
+	font-weight: 700;
 }
 
 
+.row-ast-summer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
-.dropdown-menu {
-	text-align: left;
-	padding: 1em;
-	background: white;
+.row-ast-summer {
+	background-color: white;
+	list-style-type: none;
 }
 
 
@@ -452,7 +474,7 @@ nav a:focus {
 		padding-top: 2vh;
 		padding-left: 10vw;
 		padding-right: 10vw;
-		padding-bottom: 5vh;
+		padding-bottom: 10vh;
 		background:rgb(160, 144, 184);
 	}
 	.menu-columns {
@@ -495,6 +517,7 @@ nav a:focus {
 /*Footer section */
 
 footer {
+
 	background: #5a635e;
 	color:white;
 	text-align: center;
