@@ -461,6 +461,11 @@ nav a:focus {
 	width: 12vw;
 }
 
+.dropdown-details {
+	background: #d3d3d3;
+}
+
+
 .iframe-container {
 	overflow: hidden;
 	padding-top: 0%;
