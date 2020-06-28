@@ -243,9 +243,7 @@ nav a:focus {
 	clear: both;
 }
 
-.home-about {
-	position: relative;
-}
+
 
 @media (min-width: 60rem) {
 	.col-1 {
