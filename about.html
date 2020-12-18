@@ -37,8 +37,7 @@
 		</section>
 <script>
 	$(document).ready(function(){
-    //set a waypoint for all the page parts on the page
-    var ppWaypoint = $('.grid-item').waypoint(function(direction) {
+    var waypoints = $('.grid-item').waypoint(function(direction) {
         $(this.element).addClass('show');
         this.destroy();
     },
