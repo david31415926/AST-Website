@@ -9,7 +9,17 @@
 </head>
 
 <body>
+<script>
+	var waypoint = new WayPoint({
+    element: document.getElementsById("test"),
+    handler: function(direction) {
+        notify(this.id + ' hit')
+    }
+})
+</script>
 
+
+<div class="body-section">
 <header>
 	<a href="index.html"><img src="img/logo.png" alt="AST logo" class="logo"></a>
 	<nav>
@@ -30,7 +40,8 @@
 </section>
 
 <section class="ast-summer">
-	<div class="row">
+	<div class="row-ast-summer">
+
 		<div class="menu-columns left-left">
 			<p class="text"> Welcome to AST Summer! This is your child’s virtual summer camp from home. Below is the list of classes we currently offer. Our sign up form is <a href="#signup-link"> at the bottom of the page.</a></p>
 			<p class="text"> We also offer need-based financial aid to ensure every child is able to partake in our summer camp.</p>
@@ -38,83 +49,83 @@
 			<p class="text"><strong>If you are interested in coming to one of our information sessions about our classes, please go to <a href="https://docs.google.com/document/d/1TrlLFKvnU7Qq8fk_ZSWNdsaHn8p7SB8vPfpSsG6cAN8/edit" target="_blank">this document</a> to see our schedule.</strong></p>
 			<p class="text">If you would like to see videos our instructors created about their classes or if you would like to see recordings of previous information sessions, please click <a href="https://www.youtube.com/channel/UC2o9SxiKacMkhwMPipy2rWg" target="_blank">here</a>.</p>
 			<p class="text">After signing up, an invoice from paypal for the classes you registered for will be sent within the next 24 hours.</p>
-			<p class="text"><a href="https://docs.google.com/document/d/1-ahaBChwMBD1lpL0ovoTIaxt7o-VBU_av5hv1bDjeks/edit" target="_blank">Here</a> is where you can fin out the schedule for our weekly (High school Club exploration and Weekly World language) classes to know which classes you'd like your child to attend!</p>
+			<p class="text"><a href="https://docs.google.com/document/d/1-ahaBChwMBD1lpL0ovoTIaxt7o-VBU_av5hv1bDjeks/edit" target="_blank">Here</a> is where you can find out the schedule for our weekly (High school Club exploration and Weekly World language) classes to know which classes you'd like your child to attend!</p>
 		</div>
-		
-			
-	<div class="dropdown-menu">
-		<div class="row">
-			<div class="menu-columns middle-left">
-			<ul class="ast-summer-list">
+
+
+
+		<div class="menu-columns middle-left">
+
+			<ul class="ast-summer-list" style="list-style-type:none; text-align: left">
 			<li class="ast-summer-list-title">
 				K-5
 				</li>
 
 			  <li>
-				<details class="directoryDetails"><summary id="summary">Arts &amp; Crafts</summary> ($10 per class) [3 weeks] From simple origami to making slime, students will have fun making crafts and learning how to draw. This is a fantastic opportunity to grow and nurture artistic talents. One class per week.</details></td>
-				
+				<details class="directoryDetails"><summary id="summary">Arts &amp; Crafts</summary><div class="dropdown-details"> ($10 per class) [3 weeks] From simple origami to making slime, students will have fun making crafts and learning how to draw. This is a fantastic opportunity to grow and nurture artistic talents. One class per week.</div></details>
+
 			  </li>
 
 			  <li>
-				<details class="directoryDetails"><summary id="summary">Bake Along (3rd grade+)</summary> ($10 per class) [3 weeks] A fun class for all ages, students will get to know the rules of the kitchen and bake desserts. They will get to try and learn new and delicious recipes that are sure to be used again and again. Parental supervision is strongly advised. One class per week. </details></td>
-				
+				<details class="directoryDetails"><summary id="summary">Bake Along (3rd grade+)</summary><div class="dropdown-details"> ($10 per class) [3 weeks] A fun class for all ages, students will get to know the rules of the kitchen and bake desserts. They will get to try and learn new and delicious recipes that are sure to be used again and again. Parental supervision is strongly advised. One class per week. </div></details>
+
 			  </li>
 
 			  <li>
-				<details class="directoryDetails"><summary id="summary">Beginner Music Theory</summary> ($12 per class) [7 weeks] Music theory is an essential tool in the understanding of musical composition as well as playing an instrument. For less experienced musicians, this course will go beyond the physical instrument playing and strengthen their ability to identify pitches, chords, and rhythms through only hearing and more. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Beginner Music Theory</summary><div class="dropdown-details"> ($12 per class) [7 weeks] Music theory is an essential tool in the understanding of musical composition as well as playing an instrument. For less experienced musicians, this course will go beyond the physical instrument playing and strengthen their ability to identify pitches, chords, and rhythms through only hearing and more. One class per week. </div></details>
 			  </li>
 
 			  <li>
-				<details class="directoryDetails"><summary id="summary">Creative Writing</summary> ($15 per class) [7 weeks] Unlike essay writing, creative writing aims to bolster creativity, personal style, and flow. In this course, students will develop their writing techniques by responding to a number of prompts that will encourage them to think outside the box. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Creative Writing</summary><div class="dropdown-details"> ($15 per class) [7 weeks] Unlike essay writing, creative writing aims to bolster creativity, personal style, and flow. In this course, students will develop their writing techniques by responding to a number of prompts that will encourage them to think outside the box. One class per week. </div></details>
 
 			  </li>
 
 			<li>
-			  <details class="directoryDetails"><summary id="summary">Crochet</summary> ($10 per class) [3 weeks] This course provides a great way to get started in the art of crocheting. Students will learn how to perform a variety of crochet stitches, while being able to develop their patience and dexterity. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Crochet</summary><div class="dropdown-details"> ($10 per class) [3 weeks] This course provides a great way to get started in the art of crocheting. Students will learn how to perform a variety of crochet stitches, while being able to develop their patience and dexterity. One class per week. </div></details>
 
 			</li>
 
 			<li>
-			  <details class="directoryDetails"><summary id="summary">English Language Arts</summary> ($20 per class) [7 weeks] Following the common core curriculum, students will learn basic grammar and develop their reading and speaking skills. Students will increase their vocabulary as well as their reading comprehension. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">English Language Arts</summary><div class="dropdown-details"> ($20 per class) [7 weeks] Following the common core curriculum, students will learn basic grammar and develop their reading and speaking skills. Students will increase their vocabulary as well as their reading comprehension. One class per week. </div></details>
 			</li>
 
 
 
 			<li>
-			  <details class="directoryDetails"><summary id="summary">Exercise</summary> ($10 per class) [3 weeks] Don’t have a gym? Our exercise class is a great way to learn about nutrition, develop a fitness routine, or keep the kids active! Join our instructor for some fun workouts that can be done right at home. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Exercise</summary><div class="dropdown-details"> ($10 per class) [3 weeks] Don’t have a gym? Our exercise class is a great way to learn about nutrition, develop a fitness routine, or keep the kids active! Join our instructor for some fun workouts that can be done right at home. One class per week. </div></details>
 
 			<li>
-			  <details class="directoryDetails"><summary id="summary">Greek Mythology</summary> ($12 per class) [7 weeks] In this course, students will delve into the depths of the tales of heroes, gods, and legends. Special attention will be given to how these stories have persisted throughout the millennia and the role that myths play in human nature. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Greek Mythology</summary><div class="dropdown-details"> ($12 per class) [7 weeks] In this course, students will delve into the depths of the tales of heroes, gods, and legends. Special attention will be given to how these stories have persisted throughout the millennia and the role that myths play in human nature. One class per week. </div></details>
 			</li>
-			<li><details class="directoryDetails"><summary id="summary">Math</summary> ($20 per class) [7 weeks] Following the common core curriculum, this course aims to teach students basic mathematics such as addition, subtraction, telling time, and basic shape understanding. One class per week. </details></td>
-			</li>
-
-			<li>
-			  <details class="directoryDetails"><summary id="summary">Public Speaking</summary> ($25 per class) [7 weeks] In this course, students will develop a variety of practical skills that are useful in everyday situations, whether it’s presenting in class or delivering a speech. Students will not only learn how to craft a compelling argument but also learn how to be an effective and inspiring public speaker. One class per week. </details></td>
+			<li><details class="directoryDetails"><summary id="summary">Math</summary><div class="dropdown-details"> ($20 per class) [7 weeks] Following the common core curriculum, this course aims to teach students basic mathematics such as addition, subtraction, telling time, and basic shape understanding. One class per week. </div></details>
 			</li>
 
 			<li>
-			  <details class="directoryDetails"><summary id="summary">Read Along</summary> ($12 per class) [3 weeks] Speaking and listening is paramount to social development. As a part of the Read Along course, students will strengthen their listening skills and increase reading comprehension through vocabulary learning.</details></td>
+			  <details class="directoryDetails"><summary id="summary">Public Speaking</summary><div class="dropdown-details"> ($25 per class) [7 weeks] In this course, students will develop a variety of practical skills that are useful in everyday situations, whether it’s presenting in class or delivering a speech. Students will not only learn how to craft a compelling argument but also learn how to be an effective and inspiring public speaker. One class per week. </div></details>
 			</li>
 
 			<li>
-			  <details class="directoryDetails"><summary id="summary">Science</summary> ($15 per class) [7 weeks] From exploring outer space to learning about our very own cells, students will embark on a scientific journey throughout this course. They will cover the four major areas of science: physical, chemical, life, and environmental science. This class is sure to pique your child’s scientific curiosity. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Read Along</summary><div class="dropdown-details"> ($12 per class) [3 weeks] Speaking and listening is paramount to social development. As a part of the Read Along course, students will strengthen their listening skills and increase reading comprehension through vocabulary learning.</div></details>
 			</li>
 
 			<li>
-			  <details class="directoryDetails"><summary id="summary">World Language of the Week</summary> ($10 per class) [1 week] There are thousands of languages waiting to be explored. As the course name suggests, students will get to develop a deeper understanding of several languages used all over the world. Students will get to see what interests them and possibly continue their course of study. Five classes per week (weekdays). </details></td>
+			  <details class="directoryDetails"><summary id="summary">Science</summary><div class="dropdown-details"> ($15 per class) [7 weeks] From exploring outer space to learning about our very own cells, students will embark on a scientific journey throughout this course. They will cover the four major areas of science: physical, chemical, life, and environmental science. This class is sure to pique your child’s scientific curiosity. One class per week. </div></details>
+			</li>
+
+			<li>
+			  <details class="directoryDetails"><summary id="summary">World Language of the Week</summary><div class="dropdown-details"> ($10 per class) [1 week] There are thousands of languages waiting to be explored. As the course name suggests, students will get to develop a deeper understanding of several languages used all over the world. Students will get to see what interests them and possibly continue their course of study. Five classes per week (weekdays). </div></details>
 			</li>
 
 
 			</ul>
-			
+
 			</div>
-			
-			
-			
-			
+
+
+
+
 			<div class="menu-columns middle-right">
-				<ul class="ast-summer-list">
+				<ul class="ast-summer-list" style="list-style-type:none; text-align: left">
 
 			  <li class="ast-summer-list-title">
 
@@ -124,39 +135,39 @@
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Arts &amp; Crafts</summary> ($10 per class) [3 weeks] From simple origami to making slime, students will have fun making crafts and learning how to draw. This is a fantastic opportunity to grow and nurture artistic talents. One class per week.</details></td>
+				<details class="directoryDetails"><summary id="summary">Arts &amp; Crafts</summary><div class="dropdown-details"> ($10 per class) [3 weeks] From simple origami to making slime, students will have fun making crafts and learning how to draw. This is a fantastic opportunity to grow and nurture artistic talents. One class per week.</div></details>
 
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Bake Along </summary> ($10 per class) [3 weeks] A fun class for all ages, students will get to know the rules of the kitchen and bake desserts. They will get to try and learn new and delicious recipes that are sure to be used again and again. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Bake Along </summary><div class="dropdown-details"> ($10 per class) [3 weeks] A fun class for all ages, students will get to know the rules of the kitchen and bake desserts. They will get to try and learn new and delicious recipes that are sure to be used again and again. One class per week. </div></details>
 
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Beginner Music Theory</summary> ($12 per class) [7 weeks] Music theory is an essential tool in the understanding of musical composition as well as playing an instrument. For less experienced musicians, this course will go beyond the physical instrument playing and strengthen their ability to identify pitches, chords, and rhythms through only hearing and more. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Beginner Music Theory</summary><div class="dropdown-details"> ($12 per class) [7 weeks] Music theory is an essential tool in the understanding of musical composition as well as playing an instrument. For less experienced musicians, this course will go beyond the physical instrument playing and strengthen their ability to identify pitches, chords, and rhythms through only hearing and more. One class per week. </div></details>
 
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Business Communications</summary> ($15 per class) [7 weeks] In this course, students will begin to explore the basics of marketing and sales presentation. They will get to learn how to connect with an audience as a speaker as well as the importance of branding and business structure. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Business Communications</summary><div class="dropdown-details"> ($15 per class) [7 weeks] In this course, students will begin to explore the basics of marketing and sales presentation. They will get to learn how to connect with an audience as a speaker as well as the importance of branding and business structure. One class per week. </div></details>
 
 
 			  </li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Chemistry</summary> ($15 per class) [7 weeks] From the wonders of outer space down to the structure of the molecules in and around us, students will begin to learn the fundamentals of chemistry. Students will learn about the periodic table, perform stoichiometric calculations, and more. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Chemistry</summary><div class="dropdown-details"> ($15 per class) [7 weeks] From the wonders of outer space down to the structure of the molecules in and around us, students will begin to learn the fundamentals of chemistry. Students will learn about the periodic table, perform stoichiometric calculations, and more. One class per week. </div></details>
 
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Community Service Project</summary> ($10 per class) [7 weeks] Throughout a 9-week period, students will foster their leadership skills in understanding the importance of serving their community and how they can do so. Students will learn to identify problems, create an action plan and how to best implement it. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Community Service Project</summary><div class="dropdown-details"> ($10 per class) [7 weeks] Throughout a 7-week period, students will foster their leadership skills in understanding the importance of serving their community and how they can do so. Students will learn to identify problems, create an action plan and how to best implement it. One class per week. </div></details>
 
 			</li>
 
@@ -164,83 +175,83 @@
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Competition Math</summary> ($25 per class) [7 weeks] This 9-week course aims to educate students about the formats of each competition. Students will learn effective problem solving strategies as well as the knowledge covered for each test. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Competition Math</summary><div class="dropdown-details"> ($25 per class) [7 weeks] This 7-week course aims to educate students about the formats of each competition. Students will learn effective problem solving strategies as well as the knowledge covered for each test. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Cook Along</summary> ($10 per class) [3 weeks] While exploring different types of cuisines, students will have fun making and eating a variety of dishes. They will develop basic cooking skills and be able to store a couple of tried and true recipes for their own cookbook. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Cook Along</summary><div class="dropdown-details"> ($10 per class) [3 weeks] While exploring different types of cuisines, students will have fun making and eating a variety of dishes. They will develop basic cooking skills and be able to store a couple of tried and true recipes for their own cookbook. One class per week. </div></details>
 
 			</li>
 
-			  <details class="directoryDetails"><summary id="summary">Crochet</summary> ($10 per class) [3 weeks] This course provides a great way to get started in the art of crocheting. Students will learn how to perform a variety of crochet stitches, while being able to develop their patience and dexterity. One class per week. </details></td>
- 
-			</li>
-
-			<li>
-
-			  <details class="directoryDetails"><summary id="summary">Debate</summary> ($25 per class) [7 weeks] Throughout this 9-week course, students will firmly grasp the structure and style of PF debating as well as how to utilize their time. They will learn how to craft a well-constructed argument as well as improve their speaking skills. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Crochet</summary><div class="dropdown-details"> ($10 per class) [3 weeks] This course provides a great way to get started in the art of crocheting. Students will learn how to perform a variety of crochet stitches, while being able to develop their patience and dexterity. One class per week. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Exercise</summary> ($10 per class) [3 weeks]  Don’t have a gym? Our exercise class is a great way to learn about nutrition, develop a fitness routine, or keep the kids active! Join our instructor for some fun workouts that can be done right at home. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Debate</summary><div class="dropdown-details"> ($25 per class) [7 weeks] Throughout this 7-week course, students will firmly grasp the structure and style of PF debating as well as how to utilize their time. They will learn how to craft a well-constructed argument as well as improve their speaking skills. One class per week. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Fine Art</summary> ($12 per class) [7 weeks] In this middle school fine art course, students will begin to explore and learn more advanced drawing techniques. They will have the opportunity to create still lifes, portraits, and landscape art. At the end of this course, students will get to participate in a virtual gallery walk. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Exercise</summary><div class="dropdown-details"> ($10 per class) [3 weeks]  Don’t have a gym? Our exercise class is a great way to learn about nutrition, develop a fitness routine, or keep the kids active! Join our instructor for some fun workouts that can be done right at home. One class per week. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Greek Mythology</summary> ($12 per class) [7 weeks] In this course, students will delve into the depths of the tales of heroes, gods, and legends. Special attention will be given to how these stories have persisted throughout the millennia and the role that myths play in human nature. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Fine Art</summary><div class="dropdown-details"> ($12 per class) [7 weeks] In this middle school fine art course, students will begin to explore and learn more advanced drawing techniques. They will have the opportunity to create still lifes, portraits, and landscape art. At the end of this course, students will get to participate in a virtual gallery walk. One class per week. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">High School Club of the Week</summary> ($12 per class) [1 week] For high schoolers and rising ninth graders, they will be able to explore various high school clubs. Students will be educated on the importance of getting involved with the school community and how to start their own club. Two classes per week. </details></td>
-
-			</li>
-
-			<li>
-				<details class="directoryDetails"><summary id="summary">Independent Research</summary> ($15 per class) [7 weeks] In this fast paced course, students will learn the various methods of research and create their own research proposal. They will be able to develop a deeper and more professional understanding about a topic of their choice and create a presentation regarding their topic by the end of the course. Recommended for upper level middle school students. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Greek Mythology</summary><div class="dropdown-details"> ($12 per class) [7 weeks] In this course, students will delve into the depths of the tales of heroes, gods, and legends. Special attention will be given to how these stories have persisted throughout the millennia and the role that myths play in human nature. One class per week. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Intro to Biology</summary>($20 per class) [7 weeks] From learning about cell basics to organs systems and food chains, students will develop a basic understanding about biology. Students will learn the fundamentals of biology and develop a deeper passion for the subject. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">High School Club of the Week</summary><div class="dropdown-details"> ($12 per class) [1 week] For high schoolers and rising ninth graders, they will be able to explore various high school clubs. Students will be educated on the importance of getting involved with the school community and how to start their own club. Two classes per week. </div></details>
+
+			</li>
+
+			<li>
+				<details class="directoryDetails"><summary id="summary">Independent Research</summary><div class="dropdown-details"> ($15 per class) [7 weeks] In this fast paced course, students will learn the various methods of research and create their own research proposal. They will be able to develop a deeper and more professional understanding about a topic of their choice and create a presentation regarding their topic by the end of the course. Recommended for upper level middle school students. One class per week. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Java Programming</summary> ($25 per class) [7 weeks] Want to join the ever-growing community of coders? This 9-week course will give students a basic run-down of Java and how it can be effectively used in various settings. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Intro to Biology</summary><div class="dropdown-details">($20 per class) [7 weeks] From learning about cell basics to organs systems and food chains, students will develop a basic understanding about biology. Students will learn the fundamentals of biology and develop a deeper passion for the subject. One class per week. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Math</summary> ($20 per class) [7 weeks] Following the common core curriculum, students will learn basic math principles suited to their level. This course aims to improve your child’s problem solving ability, foundations of math, as well as their love for math. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Java Programming</summary><div class="dropdown-details"> ($25 per class) [7 weeks] Want to join the ever-growing community of coders? This 7-week course will give students a basic run-down of Java and how it can be effectively used in various settings. One class per week. </div></details>
+
+			</li>
+
+			<li>
+
+			  <details class="directoryDetails"><summary id="summary">Math</summary><div class="dropdown-details"> ($20 per class) [7 weeks] Following the common core curriculum, students will learn basic math principles suited to their level. This course aims to improve your child’s problem solving ability, foundations of math, as well as their love for math. One class per week. </div></details>
 
 			</li>
 
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Movie Editing</summary> ($12 per class) [7 weeks] Interested in learning about how movies create those magical scenes and special effects? This course provides an introduction to movie editing, utilizing editor tools to bring your movie to the next level. One class per week. You will need to pay $20 for one of the editing programs that will be used. However, we do offer financial aid for the editing program </details></td>
+				<details class="directoryDetails"><summary id="summary">Movie Editing</summary><div class="dropdown-details"> ($12 per class) [7 weeks] Interested in learning about how movies create those magical scenes and special effects? This course provides an introduction to movie editing, utilizing editor tools to bring your movie to the next level. One class per week. You will need to pay $20 for one of the editing programs that will be used. However, we do offer financial aid for the editing program </div></details>
 
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Public Speaking</summary> ($25 per class) [7 weeks] From delivering a presentation in front of a class to job interviews, public speaking is a necessary skill. This course aims to help your students become an eloquent speaker and deliver and craft an effective argument. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Public Speaking</summary><div class="dropdown-details"> ($25 per class) [7 weeks] From delivering a presentation in front of a class to job interviews, public speaking is a necessary skill. This course aims to help your students become an eloquent speaker and deliver and craft an effective argument. One class per week. </div></details>
 
 
 			  </li>
@@ -249,37 +260,37 @@
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Science Olympiad</summary> ($20 per class) [7 weeks] The Science Olympiad is a reputable competition that can give students a variety of opportunities. This 9-week course aims to develop students’ knowledge of Science Olympiad topics as well as a myriad of effective test taking strategies. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Science Olympiad</summary><div class="dropdown-details"> ($20 per class) [7 weeks] The Science Olympiad is a reputable competition that can give students a variety of opportunities. This 7-week course aims to develop students’ knowledge of Science Olympiad topics as well as a myriad of effective test taking strategies. One class per week. </div></details>
 
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Theatre</summary> ($12 per class) [7 weeks] In this exciting course, students will aim to learn more about the theater and tech crew. Students will learn different stage directions, roles in a play, and more about the theater overall. This is an excellent opportunity to bolster your child’s passion for theater and the arts. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Theatre</summary><div class="dropdown-details"> ($12 per class) [7 weeks] In this exciting course, students will aim to learn more about the theater and tech crew. Students will learn different stage directions, roles in a play, and more about the theater overall. This is an excellent opportunity to bolster your child’s passion for theater and the arts. One class per week. </div></details>
 
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Web Development</summary> ($25 per class) [7 weeks] As the technology field keeps expanding, web development is a useful tool to have under one’s toolbelt. This course aims to teach students the fundamentals of web-design and strengthen their coding ability. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Web Development</summary><div class="dropdown-details"> ($25 per class) [7 weeks] As the technology field keeps expanding, web development is a useful tool to have under one’s toolbelt. This course aims to teach students the fundamentals of web-design and strengthen their coding ability. One class per week. </div></details>
 
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">World Language of the Week</summary> ($10 per class) [1 week] There are thousands of languages waiting to be explored. As the course name suggests, students will get to develop a deeper understanding of several languages used all over the world. Students will get to see what interests them and possibly continue their course of study. Five classes per week (weekdays). </details></td>
+				<details class="directoryDetails"><summary id="summary">World Language of the Week</summary><div class="dropdown-details"> ($10 per class) [1 week] There are thousands of languages waiting to be explored. As the course name suggests, students will get to develop a deeper understanding of several languages used all over the world. Students will get to see what interests them and possibly continue their course of study. Five classes per week (weekdays). </div></details>
 
 			  </li>
 
 			</ul>
-			
+
 			</div>
-			
-			
-			
-			
+
+
+
+
 			<div class="menu-columns right-right">
-				<ul class="ast-summer-list">
+				<ul class="ast-summer-list" style="list-style-type:none; text-align: left">
 
 			  <li class="ast-summer-list-title">
 				HIGH SCHOOL
@@ -287,105 +298,105 @@
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Arts &amp; Crafts</summary> ($10 per class) [3 weeks] From simple origami to making slime, students will have fun making crafts and learning how to draw. This is a fantastic opportunity to grow and nurture artistic talents. One class per week.</details></td>
+				<details class="directoryDetails"><summary id="summary">Arts &amp; Crafts</summary><div class="dropdown-details"> ($10 per class) [3 weeks] From simple origami to making slime, students will have fun making crafts and learning how to draw. This is a fantastic opportunity to grow and nurture artistic talents. One class per week.</div></details>
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">AP Biology</summary> ($20 per class) [7 weeks] From learning about cell signaling transduction pathways to food chains and the ecosystem we live in, this a rigorous, fast-paced course that allows students to develop a deeper understanding of biology. All 8 units on the AP exam will be covered, along with a myriad of resources, quizzes and tests, and practice labs that will help prepare students for real life applications. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">AP Biology</summary><div class="dropdown-details"> ($20 per class) [7 weeks] From learning about cell signaling transduction pathways to food chains and the ecosystem we live in, this a rigorous, fast-paced course that allows students to develop a deeper understanding of biology. All 8 units on the AP exam will be covered, along with a myriad of resources, quizzes and tests, and practice labs that will help prepare students for real life applications. One class per week. </div></details>
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Business Communications</summary> ($15 per class) [7 weeks] In this course, students will begin to explore the basics of marketing and sales presentation. They will get to learn how to connect with an audience as a speaker as well as the importance of branding and business structure. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Business Communications</summary><div class="dropdown-details"> ($15 per class) [7 weeks] In this course, students will begin to explore the basics of marketing and sales presentation. They will get to learn how to connect with an audience as a speaker as well as the importance of branding and business structure. One class per week. </div></details>
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Chemistry</summary> ($15 per class) [7 weeks] From the wonders of outer space down to the structure of the molecules in and around us, students will begin to learn the fundamentals of chemistry. Students will learn about the periodic table, perform stoichiometric calculations, and more. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Chemistry</summary><div class="dropdown-details"> ($15 per class) [7 weeks] From the wonders of outer space down to the structure of the molecules in and around us, students will begin to learn the fundamentals of chemistry. Students will learn about the periodic table, perform stoichiometric calculations, and more. One class per week. </div></details>
 
 			  </li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">College Application Help</summary> ($25 per class) [7 weeks] As college deadlines approaches, this is a fantastic opportunity for rising seniors to receive additional support in their college applications. However, this is not limited to them. This course also provides a great headstart to understanding the intricacies of developing a great application. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">College Application Help</summary><div class="dropdown-details"> ($25 per class) [7 weeks] As college deadlines approaches, this is a fantastic opportunity for rising seniors to receive additional support in their college applications. However, this is not limited to them. This course also provides a great headstart to understanding the intricacies of developing a great application. One class per week. </div></details>
 
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Community Service Project</summary> ($10 per class) [7 weeks] Throughout a 9-week period, students will foster their leadership skills in understanding the importance of serving their community and how they can do so. Students will learn to identify problems, create an action plan and how to best implement it. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Community Service Project</summary><div class="dropdown-details"> ($10 per class) [7 weeks] Throughout a 7-week period, students will foster their leadership skills in understanding the importance of serving their community and how they can do so. Students will learn to identify problems, create an action plan and how to best implement it. One class per week. </div></details>
 			</li>
 
 
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Competition Math</summary> ($25 per class) [7 weeks] This 9-week course aims to educate students about the formats of each competition. Students will learn effective problem solving strategies as well as the knowledge covered for each test.</details></td>
+			  <details class="directoryDetails"><summary id="summary">Competition Math</summary><div class="dropdown-details"> ($25 per class) [7 weeks] This 7-week course aims to educate students about the formats of each competition. Students will learn effective problem solving strategies as well as the knowledge covered for each test.</div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Cook Along</summary> ($10 per class) [3 weeks] While exploring different types of cuisines, students will have fun making and eating a variety of dishes. They will develop basic cooking skills and be able to store a couple of tried and true recipes for their own cookbook. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Cook Along</summary><div class="dropdown-details"> ($10 per class) [3 weeks] While exploring different types of cuisines, students will have fun making and eating a variety of dishes. They will develop basic cooking skills and be able to store a couple of tried and true recipes for their own cookbook. One class per week. </div></details>
 			</li>
 
-			  <details class="directoryDetails"><summary id="summary">Crochet</summary> ($10 per class) [3 weeks] This course provides a great way to get started in the art of crocheting. Students will learn how to perform a variety of crochet stitches, while being able to develop their patience and dexterity. One class per week. </details></td>
-			</li>
-
-			<li>
-
-			  <details class="directoryDetails"><summary id="summary">Greek Mythology</summary> ($12 per class) [7 weeks] In this course, students will delve into the depths of the tales of heroes, gods, and legends. Special attention will be given to how these stories have persisted throughout the millennia and the role that myths play in human nature. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Crochet</summary><div class="dropdown-details"> ($10 per class) [3 weeks] This course provides a great way to get started in the art of crocheting. Students will learn how to perform a variety of crochet stitches, while being able to develop their patience and dexterity. One class per week. </div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">High School Club of the Week</summary> ($12 per class) [1 week] For high schoolers and rising ninth graders, they will be able to explore various high school clubs. Students will be educated on the importance of getting involved with the school community and how to start their own club. Two classes per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Greek Mythology</summary><div class="dropdown-details"> ($12 per class) [7 weeks] In this course, students will delve into the depths of the tales of heroes, gods, and legends. Special attention will be given to how these stories have persisted throughout the millennia and the role that myths play in human nature. One class per week. </div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Independent Research</summary> ($15 per class) [7 weeks] In this fast paced course, students will learn the various methods of research and create their own research proposal. They will be able to develop a deeper and more professional understanding about a topic of their choice and create a presentation regarding their topic by the end of the course. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">High School Club of the Week</summary><div class="dropdown-details"> ($12 per class) [1 week] For high schoolers and rising ninth graders, they will be able to explore various high school clubs. Students will be educated on the importance of getting involved with the school community and how to start their own club. Two classes per week. </div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Interview Prep</summary> ($25 per class) [3 weeks] It is never too early to start planning for interviews! For kids on the job hunt or rising seniors looking to college admissions, being able to speak eloquently is an essential skill in demonstrating communicative prowess as well as showing off your qualifications. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Independent Research</summary><div class="dropdown-details"> ($15 per class) [7 weeks] In this fast paced course, students will learn the various methods of research and create their own research proposal. They will be able to develop a deeper and more professional understanding about a topic of their choice and create a presentation regarding their topic by the end of the course. One class per week. </div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Intro to Biology</summary> ($20 per class) [7 weeks] From learning about cell basics to organs systems and food chains, students will develop a basic understanding about biology. Students will learn the fundamentals of biology and develop a deeper passion for the subject. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Interview Prep</summary><div class="dropdown-details"> ($25 per class) [3 weeks] It is never too early to start planning for interviews! For kids on the job hunt or rising seniors looking to college admissions, being able to speak eloquently is an essential skill in demonstrating communicative prowess as well as showing off your qualifications. One class per week. </div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Java Programming</summary> ($25 per class) [7 weeks] Want to join the ever-growing community of coders? This 9-week course will give students a basic run-down of Java and how it can be effectively used in various settings. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Intro to Biology</summary><div class="dropdown-details"> ($20 per class) [7 weeks] From learning about cell basics to organs systems and food chains, students will develop a basic understanding about biology. Students will learn the fundamentals of biology and develop a deeper passion for the subject. One class per week. </div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Movie Editing</summary> ($12 per class) [7 weeks] Interested in learning about how movies create those magical scenes and special effects? This course provides an introduction to movie editing, utilizing editor tools to bring your movie to the next level. One class per week. You will need to pay $20 for one of the editing programs that will be used. However, we do offer financial aid for the editing program </details></td>
+			  <details class="directoryDetails"><summary id="summary">Java Programming</summary><div class="dropdown-details"> ($25 per class) [7 weeks] Want to join the ever-growing community of coders? This 7-week course will give students a basic run-down of Java and how it can be effectively used in various settings. One class per week. </div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Public Speaking</summary> ($25 per class) [7 weeks] Public speaking skills are necessary for nearly every situation: whether it's a class presentation or an interview. This high-school level 9-week course aims to teach students not only how to synthesize a compelling argument but how to be an effective communicator. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Movie Editing</summary><div class="dropdown-details"> ($12 per class) [7 weeks] Interested in learning about how movies create those magical scenes and special effects? This course provides an introduction to movie editing, utilizing editor tools to bring your movie to the next level. One class per week. You will need to pay $20 for one of the editing programs that will be used. However, we do offer financial aid for the editing program </div></details>
 			</li>
 
 			<li>
 
-			  <details class="directoryDetails"><summary id="summary">Science Olympiad</summary> ($20 per class) [7 weeks] The Science Olympiad is a reputable competition that can give students a variety of opportunities. This 9-week course aims to develop students’ knowledge of Science Olympiad topics as well as a myriad of effective test taking strategies. One class per week. </details></td>
+			  <details class="directoryDetails"><summary id="summary">Public Speaking</summary><div class="dropdown-details"> ($25 per class) [7 weeks] Public speaking skills are necessary for nearly every situation: whether it's a class presentation or an interview. This high-school level 7-week course aims to teach students not only how to synthesize a compelling argument but how to be an effective communicator. One class per week. </div></details>
+			</li>
+
+			<li>
+
+			  <details class="directoryDetails"><summary id="summary">Science Olympiad</summary><div class="dropdown-details"> ($20 per class) [7 weeks] The Science Olympiad is a reputable competition that can give students a variety of opportunities. This 7-week course aims to develop students’ knowledge of Science Olympiad topics as well as a myriad of effective test taking strategies. One class per week. </div></details>
 			</li>
 
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Theatre</summary> ($12 per class) [7 weeks] In this exciting course, students will aim to learn more about the theater and tech crew. Students will learn different stage directions, roles in a play, and more about the theater overall. This is an excellent opportunity to bolster your child’s passion for theater and the arts. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Theatre</summary><div class="dropdown-details"> ($12 per class) [7 weeks] In this exciting course, students will aim to learn more about the theater and tech crew. Students will learn different stage directions, roles in a play, and more about the theater overall. This is an excellent opportunity to bolster your child’s passion for theater and the arts. One class per week. </div></details>
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Web Development</summary> ($25 per class) [7 weeks] As the technology field keeps expanding, web development is a useful tool to have under one’s toolbelt. This course aims to teach students the fundamentals of web-design and strengthen their coding ability. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Web Development</summary><div class="dropdown-details"> ($25 per class) [7 weeks] As the technology field keeps expanding, web development is a useful tool to have under one’s toolbelt. This course aims to teach students the fundamentals of web-design and strengthen their coding ability. One class per week. </div></details>
 
 			  </li>
 
@@ -393,33 +404,35 @@
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">World Language of the Week</summary> ($10 per class) [1 week] There are thousands of languages waiting to be explored. As the course name suggests, students will get to develop a deeper understanding of several languages used all over the world. Students will get to see what interests them and possibly continue their course of study. Five classes per week (weekdays). </details></td>
+				<details class="directoryDetails"><summary id="summary">World Language of the Week</summary><div class="dropdown-details"> ($10 per class) [1 week] There are thousands of languages waiting to be explored. As the course name suggests, students will get to develop a deeper understanding of several languages used all over the world. Students will get to see what interests them and possibly continue their course of study. Five classes per week (weekdays). </div></details>
 			  </li>
 
 			  <li>
 
-				<details class="directoryDetails"><summary id="summary">Exercise</summary> ($10 per class) [3 weeks]  Don’t have a gym? Our exercise class is a great way to learn about nutrition, develop a fitness routine, or keep the kids active! Join our instructor for some fun workouts that can be done right at home. One class per week. </details></td>
+				<details class="directoryDetails"><summary id="summary">Exercise</summary><div class="dropdown-details"> ($10 per class) [3 weeks]  Don’t have a gym? Our exercise class is a great way to learn about nutrition, develop a fitness routine, or keep the kids active! Join our instructor for some fun workouts that can be done right at home. One class per week. </div></details>
 			  </li>
 
 			</ul>
-			</div>	
-			</div>
 		</div>
+
 	</div>
-	
+
 	<div align="right">
 		<iframe src="https://calendar.google.com/calendar/embed?src=fcvg98v9n5jlv39ektge7tvlb4%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width=100% height="600" frameborder="0" scrolling="no"></iframe>
 	</div>
+
 	<a id="signup-link">
 		<div class="iframe-container">
 			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScg5TG1PhRwGyvuxsuTAUDPrwfK8e0NoEJjwFMFA202s2P-jQ/viewform?embedded=true" width=100% height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 		</div>
 	</a>
-	
+
 </section>
 
+</div>
+
 <footer>
-	<p><sliong>©2020 ACHIEVE SUCCESS TOGETHER ADMINISTERED BY CAPA</sliong></p>
+	<p><strong>©2020 ACHIEVE SUCCESS TOGETHER ADMINISTERED BY CAPA</strong></p>
 
 </footer>
 
